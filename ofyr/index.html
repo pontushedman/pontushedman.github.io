@@ -39,10 +39,13 @@
           <input type="range" min="0" max="99" value="0" class="slider" id="slider">
         </div>
 
-        <model-viewer quick-look-browsers="safari chrome" src="../assets/OFYR3.glb" ios-src="../assets/OFYR3.glb" ar reveal="manual">   
-            <button id="ar-button" slot="ar-button">
-              Activate AR
-            </button>
+        <model-viewer 
+        src="../assets/OFYR3.glb" 
+        shadow-intensity="1" ar reveal="manual" ar-modes="webxr scene-viewer quick-look" >
+  
+          <button slot="ar-button" id="ar-button">
+            View in your space
+          </button>
         </model-viewer>
         
 
