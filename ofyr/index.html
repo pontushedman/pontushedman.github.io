@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>OFYR</title>
+    <script type="module" crossorigin src="/assets/ofyr.9e3b625b.js"></script>
+    <link rel="modulepreload" href="/assets/OrbitControls.3e568723.js">
+    <link rel="stylesheet" href="/assets/ofyr.d5bb1992.css">
+  </head>
+  <body>
+    <div id="header">
+      <div><img id="logo" src="/assets/logo2.886f0e94.webp"></div>
+    </div>
+    <div id="product">
+      <div id="product_model">
+        
+      </div>
+      <div id="product_info">
+        <p id="product_name">OFYR Tabl’O</p>
+        <p id="product_desc">Kompakt, effektiv och elegant: OFYR Tabl’O är den perfekta bordsgrillen för matlagning av hälsosamma och läckra måltider för 2-6 personer. OFYR Tabl`O är tillverkat av svartlackerat stål och vilar på en värmebeständig bräda. Den levereras tillsammans med en Quickstarter samt ett praktiskt verktyg för att vända på stekplattan samt att reglera luftventilerna.
+          Ta dig mer tid att helt enkelt vara tillsammans och en smak av de goda sakerna i livet.</p>
+        <div id="product_color_choices">
+          <div class="product_color"></div>
+          <div class="product_color"></div>
+          <div class="product_color"></div>
+          <div class="product_color"></div>
+          <input class="product_color type" type="color">
+        </div>
+
+        <p id="product_price">399kr</p>
+
+        <div id="pos">
+          <input type="range" min="0" max="99" value="0" class="slider" id="slider">
+        </div>
+
+        <model-viewer
+        src="../assets/OFYR3.glb" 
+        ar reveal="manual">   
+            <button id="ar-button" slot="ar-button">
+              Activate AR
+            </button>
+        </model-viewer>
+        
+
+      </div>
+    </div>
+  
+  </body>
+</html>
